@@ -7,7 +7,23 @@ $ npm install --save-dev jest
 ```
 
 ## Use .env file
-```index.test.js
+### index.test.js
+
+```
 import { config } from 'dotenv';
 config();
+```
+
+### .env
+
+```
+CREDENTIALS=credentials
+PROFILE=dev
+```
+
+### gitignore
+
+```
+node_module
+.env
 ```
